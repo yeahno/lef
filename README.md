@@ -141,7 +141,7 @@ $app=new Application();
 //$app->runtime_dir='Runtime/'; //默认运行目录Runtime/
 $app->registerNamespaces(array(
     'Controller'=>$app->app_dir.'Controller', //注册控制器目录
-    'Model'=>$app->app_idr.'Model'            //注册模型目录
+    'Model'=>$app->app_dir.'Model'            //注册模型目录
 ));
 //初始化配置
 /*
