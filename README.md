@@ -15,7 +15,7 @@ lef是一个免费开源、快速、简单的面向对象的PHP高性能轻量�
 新建目录结构
 
     project  应用部署目录
-    ├─App           应用目录（可设置）
+    ├─App           应用目录（可更改）
     │  ├─Config             公共配置目录（可更改,可选）
     │  │  └─config.php      公共配置文件（可更改,可选）
     │  ├─Home               模块1目录(可更改)  
@@ -24,14 +24,16 @@ lef是一个免费开源、快速、简单的面向对象的PHP高性能轻量�
     │  │  ├─Controller      模块控制器目录（不可更改）
     │  │  │  └─Index.php    Index控制器
     │  │  ├─Model           模型目录（可更改,可选）
-    │  │  └─View            视图目录（可更改,可选）
+    │  │  ├─View            视图目录（可更改,可选）
+    │  │  └─Module.php      模块中间类（不可更改,可选）
     │  ├─Admin              模块2目录(可更改)  
     │  │  ├─Config          模块配置目录（可更改,可选）
     │  │  │  └─config.php   模块配置文件（可更改,可选）
     │  │  ├─Controller      模块控制器目录（不可更改）
     │  │  │  └─Index.php    Index控制器
     │  │  ├─Model           模型目录（可更改,可选）
-    │  │  └─View            视图目录（可更改,可选）
+    │  │  ├─View            视图目录（可更改,可选）
+    │  │  └─Module.php      模块中间类（不可更改,可选）
     │  ├─Model              公共模型目录(可更改,可选)
     │  └─Runtime            运行目录(可更改,写权限)
     ├─Lef                   框架目录
@@ -118,7 +120,7 @@ class Index extends \ControllerAbstract{
 新建目录结构
 
     project  应用部署目录
-    ├─App           应用目录（可设置）
+    ├─App           应用目录（可更改）
     │  ├─Config             配置目录（可更改,可选）
     │  │  ├─config.php      配置文件
     │  ├─Controller         控制器目录(不可更改)
